@@ -63,6 +63,7 @@ void drawChar5x7(u_char rcol, u_char rrow, char c,
   while (row < 8) {
     while (col < 5) {
       u_int colorBGR = (font_5x7[oc][col] & bit) ? fgColorBGR : bgColorBGR;
+
       lcd_writeColor(colorBGR);
       col++;
     }
